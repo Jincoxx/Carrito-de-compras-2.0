@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb; /* Color de fondo claro */
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffe600; /* Color característico de Mercado Libre */
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  header input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 0 10px;
+    max-width: 1200px;
+  }
+  
+  /* Productos */
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 70%; /* Parte izquierda para productos */
+  }
+  
+  .product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+    text-align: center;
+  }
+  
+  .product:hover {
+    transform: scale(1.03); /* Efecto hover al pasar el mouse */
+  }
+  
+  .product img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .product h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  
+  .product p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .product button {
+    background-color: #3483fa; /* Azul característico de Mercado Libre */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  .product button:hover {
+    background-color: #2968c8; /* Hover sobre el botón */
+  }
+  
+  /* Carrito */
+  #cart {
+    width: 25%;
+    margin-left: 20px;
+  }
+  
+  #cart h2 {
+    font-size: 22px;
+    color: #333;
+  }
+  
+  #cart-items li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    color: #333;
+  }
+  
+  #cart-items li span {
+    font-weight: bold;
+  }
+  
+  #clear-cart {
+    background-color: #e63946; /* Rojo para botón de vaciar */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+  }
+  
+  #clear-cart:hover {
+    background-color: #b02633;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    #products {
+      width: 100%;
+    }
+  
+    #cart {
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    #cart-items li button {
+      background-color: #3483fa; /* Azul para los botones */
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+    
+    #cart-items li button:hover {
+      background-color: #2968c8; /* Hover sobre el botón */
+    }  
+
+  }
+  
+ 
